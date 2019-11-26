@@ -5,7 +5,9 @@ import java.util.*;
 public class HashtableConcept {
 
 	public static void main(String[] args) {
-		// it is similar to HashMap --> But it is not thread safe(synchronized)
+		// HashMap is non synchronized. It is not-thread safe and can't be shared 
+		//                        between many threads without proper synchronization code.
+		// Hashtable is synchronized. It is thread-safe and can be shared with many threads.
 		// keys --> Object --> hashcode -->Value
 		// it wont allow any null keys/null values --> if you try to insert it then it will through 'NullPointerException'
 		Hashtable<String,String> table=new Hashtable<>();
