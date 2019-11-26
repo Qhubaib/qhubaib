@@ -54,7 +54,34 @@ public class ForWhileDoWhileExample {
 			}
 		}
 		
-		
+		/**
+		 * ***************** While Loop with break statement ****************
+			9
+			8
+			7
+			6
+			***************** While Loop with continue statement ****************
+			9
+			8
+			7
+			6
+			4
+			3
+			2
+			1
+			***************** Do While Loop with continue statement ****************
+			9
+			***************** For Loop with continue statement ****************
+			1
+			2
+			3
+			1
+			2
+			3
+			2
+			3
+
+		 */
 	}
 
 }
