@@ -5,7 +5,7 @@ import java.util.*;
 public class HashtableConcept {
 
 	public static void main(String[] args) {
-		// it is similar to HashMap --> But it is not thread safe(synchronized)
+		// it is similar to HashMap --> But it is thread safe(synchronized) 
 		// keys --> Object --> hashcode -->Value
 		// it wont allow any null keys/null values --> if you try to insert it then it will through 'NullPointerException'
 		Hashtable<String,String> table=new Hashtable<>();
@@ -17,6 +17,7 @@ public class HashtableConcept {
 		table.put("five", "somebody");
 		table.put("five", "jdk");
 		System.out.println("Before using Hashtable.clear() method :: \n"+table);
+		System.out.println(table.get("munna"));//null
 		
 		
 		Hashtable<String,String> clone=new Hashtable<>();
@@ -28,4 +29,9 @@ public class HashtableConcept {
 
 	}
 
+}
+
+class M
+{
+	
 }

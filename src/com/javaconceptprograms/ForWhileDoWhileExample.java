@@ -35,12 +35,12 @@ public class ForWhileDoWhileExample {
 		int i = 9;
 		do
 		{
-			System.out.println(i);
 			i--;
 			if(i==5)
 				continue;
+			System.out.println(i);
 		}
-		while(i>10);
+		while(i>1);
 			
 		//For Loop will execute upto the particular condition is true(If we know the exact size it is better to go for For Loop
 		System.out.println("***************** For Loop with continue statement ****************");
@@ -54,7 +54,34 @@ public class ForWhileDoWhileExample {
 			}
 		}
 		
-		
+		/**
+		 * ***************** While Loop with break statement ****************
+			9
+			8
+			7
+			6
+			***************** While Loop with continue statement ****************
+			9
+			8
+			7
+			6
+			4
+			3
+			2
+			1
+			***************** Do While Loop with continue statement ****************
+			9
+			***************** For Loop with continue statement ****************
+			1
+			2
+			3
+			1
+			2
+			3
+			2
+			3
+
+		 */
 	}
 
 }

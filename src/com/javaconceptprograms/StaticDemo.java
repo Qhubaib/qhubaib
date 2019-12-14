@@ -46,6 +46,28 @@ public class StaticDemo {
 	 * Note: Static block calls when load a class(class loads only once if you create 'n' no.of objects also
 	 * 		 Constructor calls when you create an object
 	 * 
+	 *  First static block
+		In static Block
+		instance block
+		Second instance block
+		In Constructor
+		
+		instance block
+		Second instance block
+		In Constructor
+		instance block
+		Second instance block
+		In Constructor
+		Student Details :: ID: 3, NAME: Qhubaib, FATHER: Father of Qhubaib Ahmed
+		instance block
+		Second instance block
+		In Constructor
+		Student Details :: ID: 1, NAME: Roshan Zameer, FATHER: Father of Qhubaib Ahmed
+		Student Details :: ID: 2, NAME: Sadaddin, FATHER: Father of Qhubaib Ahmed
+		Student Details :: ID: 4, NAME: Hasnain, FATHER: Father of Qhubaib Ahmed
+
+	 * 
+	 * 
 	 */
 
 	public static void main(String[] args) {
