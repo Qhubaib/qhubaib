@@ -51,7 +51,19 @@ public class StaticDemo {
 		instance block
 		Second instance block
 		In Constructor
-	 
+		instance block
+		Second instance block
+		In Constructor
+		Student Details :: ID: 3, NAME: Qhubaib, FATHER: Father of Qhubaib Ahmed
+		instance block
+		Second instance block
+		In Constructor
+		Student Details :: ID: 1, NAME: Roshan Zameer, FATHER: Father of Qhubaib Ahmed
+		Student Details :: ID: 2, NAME: Sadaddin, FATHER: Father of Qhubaib Ahmed
+		Student Details :: ID: 4, NAME: Hasnain, FATHER: Father of Qhubaib Ahmed
+
+	 * 
+	 * 
 	 */
 
 	public static void main(String[] args) {

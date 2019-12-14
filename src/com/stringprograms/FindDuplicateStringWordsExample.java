@@ -6,45 +6,69 @@ public class FindDuplicateStringWordsExample {
 
 	public static void main(String[] args) {
 
-		String s = "Hey java i am using java is i Hey java java";
+		String s = "Hey java i am using java is i Hey java java hey".toLowerCase();
 		String a[] = s.split(" ");
-		int count=1;
-		String c,d;
+		int count;
 		
 		for(int i=0;i<a.length;i++)
 		{
-			c=a[i];
-			//count = 1;
+			count = 1;
 			for(int j=i+1;j<a.length;j++)
 			{
-				d=a[j];
-				if(c.equalsIgnoreCase(d))
+				if(a[i].equals(a[j]))
 				{
 					count++;
+					a[j]="0";
 				}
 			}
-			if(count>1)
+			if(count>1 && a[i]!="0")
 			{
-				System.out.println("The value: '"+c+"' is Repeated: "+count+" Times");
-			}
-			s = s.replaceAll(a[i], "");
-			//System.out.println(s+"      "+a.toString());
-			count = 1;
-			//i--; // --> i value decrement is not required, Cause a[] value is fixed
+				System.out.println("The value: '"+a[i]+"' is Repeated: "+count+" Times");
+			}			
 		}
 		
 		//Method 2
 		System.out.println("************** Next Method Using Set *************");
 		
-		Set<String> set = new HashSet<>();
-		for(String sub:a)
+		String ss = "Hey syed this is this syed hey what syed this hey syed".toLowerCase();
+		String[] q = ss.split(" ");
+		int counter=1;
+
+		for(int i=0;i<q.length;i++)
 		{
-			if(set.add(sub)==false)
-			{				
-				System.out.println("Duplicate Names in Array is: "+sub+" --> it repeats  Times");
+			for(int j=i+1;j<q.length;j++)
+			{
+				if(q[i].equals(q[j]))
+				{
+					counter++;
+				}
 			}
-			//counter = 1;
+			if(counter>1)
+			{
+				System.out.println("The value: '"+q[i]+"' is Repeated: "+counter+" Times");
+				ss = ss.replaceAll(q[i],"");
+				System.out.println(ss);
+				q=ss.split(" ");
+				counter=1;
+			}
 		}
+
+		/***
+		 * Output for above two
+		 * The value: 'hey' is Repeated: 3 Times
+			The value: 'java' is Repeated: 4 Times
+			The value: 'i' is Repeated: 2 Times
+			************** Next Method Using Set *************
+			The value: 'hey' is Repeated: 3 Times
+			The value: 'syed' is Repeated: 4 Times
+			The value: 'this' is Repeated: 3 Times
+			The value: '' is Repeated: 3 Times
+			The value: '' is Repeated: 2 Times
+
+		 */
+
+		
+		
 
 	}
 
