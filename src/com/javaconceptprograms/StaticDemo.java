@@ -46,12 +46,8 @@ public class StaticDemo {
 	 * Note: Static block calls when load a class(class loads only once if you create 'n' no.of objects also
 	 * 		 Constructor calls when you create an object
 	 * 
-	 *  First static block
+	 *	First static block
 		In static Block
-		instance block
-		Second instance block
-		In Constructor
-		
 		instance block
 		Second instance block
 		In Constructor
