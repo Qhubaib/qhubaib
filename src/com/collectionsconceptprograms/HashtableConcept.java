@@ -7,7 +7,6 @@ public class HashtableConcept {
 	public static void main(String[] args) {
 
 		// it is similar to HashMap --> But it is thread safe(synchronized) 
-    //Multi thread mean non-synchronized
 		// HashMap is non synchronized. It is not-thread safe and can't be shared 
 		// between many threads without proper synchronization code.
 		// Hashtable is synchronized. It is thread-safe and can be shared with many threads.
